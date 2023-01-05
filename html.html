@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0", maximum-scale=1.0, user-scalable="no">
+
+<title>James Kalvitz</title>
+
+<!--jQuery UI-->
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+<!--SmtpJS.com (for form emails)-->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<!--open source CDN (content delivery network) lirbrary-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!--google fonts-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-box">Hello World</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links" id="tabs">
+          <ul>
+            <li><a id="tab1" href="#">
+                HOME
+                <!--<i class="fas fa-home"></i>-->
+            </a></li>
+            <li><a id="tab2" href="#">
+                ABOUT
+                <!--<i class="far fa-address-card"></i>-->
+            </a></li>
+            <li><a id="tab3" href="#">
+                CONTACT
+                <!--<i class="fas fa-phone"></i>-->
+            </a></li>
+          </ul>
+        </div>
+    </nav>
+
+    <!--tab1-->
+    <div class="container" id="tab1C"> 
+                    <div>
+                        <h1 class="homeText">My name is James R. Kalvitz Jr.</h1>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div class="jimmyImg1">
+                        <img src="jimmy.jpg" alt="Image of James Kalvitz ">
+                    </div>
+    </div>
+
+    <!--tab2-->
+    <div class="container" id="tab2C">   
+
+        <div>
+
+            <p class="homeBio"><strong>I have been a web designer for 2 years. Most of my skill focuses on front end/client side web design. I am actively searching for opportunities to gain experience and start a career in the web design/development field. currently, I attend classes at Lorain County Community College that contribute towards an Associate of Applied Business in Web Development. With a 1-year certification in Web Design Fundamentals and an Associate of Arts in Universal arts through LCCC, my strong art background helps me aid the web design/development field while learning through open source criteria. Please feel free to download my resume below and contact me if you feel I could deem fit for an oppurtunity to work for you, with your team, or with your vision. Thank you, <br><br> ~James R. Kalvitz Jr.</strong></p>
+
+        </div>
+
+        <div class="toggler">
+            <div id="effect">
+            <div class="centerMe">
+                    
+                    <button class="button-55"><a href="CV.pdf" download>Download CV</a></button>
+
+                    <br><br>
+
+                    <button class="button-55"><a href="2023ResumeJamesK.pdf" download>Download Resume</a></button>
+            </div>
+            </div>
+        </div>
+           
+        <div class="btnTab2">
+
+          <button id="aboutBtn">Click Me</button>
+
+        </div>
+    </div>
+
+    <!--tab3-->
+    <div class="container" id="tab3C">    
+        <div class="contactContainer">
+
+            <!--calling email function-->
+           <form onsubmit="sendEmail(); reset(); return false;">
+
+            
+            <h3>Get in touch</h3>
+            
+
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <input type="email" id="email" placeholder="Email" required>
+
+            <input type="text" id="phone" placeholder="Phone" required>
+
+            <textarea id="message" rows="4" placeholder="How can I help?"></textarea>
+
+            <button type="submit">Send</button>
+
+           </form>
+
+        </div>
+    </div>
+
+</body>
+</html>
