@@ -3,7 +3,7 @@ function sendEmail(){
 
     SecureToken : "XXXX-XXXX-XXXX-XXXX-XXXX",
     To : 'kalvitzjames1@gmail.com',
-    From : 'kalvitzjames@jkalv.com',
+    From : 'kalvitzjames1@jkalv.com',
     ReplyAddress: document.getElementById("email").value,
     Subject : "New Contact Form Enquiry",
     Body : "<br> Name: " + document.getElementById("name").value
