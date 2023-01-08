@@ -1,21 +1,31 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
-    height: 100vmax;
-    font-family: sans-serif;
-    background: rgb(167, 168, 168);
+    height: 100%;
+    /* Set height to 100% */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image:
+        linear-gradient(to top right,
+            white 50%,
+            black 50%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     scroll-behavior: smooth;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
-.container{
+.container {
     color: white;
 }
-.container, p{
+
+.container,
+p {
     font-size: 20px;
     margin: .5rem;
     padding: .2rem;
 }
+
 .navbar {
     display: flex;
     position: relative;
@@ -26,7 +36,7 @@ html, body {
 }
 
 .navbar-box {
-    
+
     margin: 1.2rem;
 }
 
@@ -54,6 +64,7 @@ html, body {
 .navbar-links li:hover {
     background-color: #555;
 }
+
 .toggle-button {
     position: absolute;
     top: .50rem;
@@ -73,27 +84,30 @@ html, body {
     border-radius: 10px;
 }
 
-.homeText{
+.homeText {
     text-align: center;
     font-size: 3rem;
 }
-.homeBio{
+
+.homeBio {
     display: flex;
     justify-content: center;
     text-align: center;
     margin: 30px;
-    background-color: rgba(0, 0, 0, 0.466);
-    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.562);
     border-radius: 10px;
-    font-size: 40px;
+    font-size: 50px;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
-.btnTab2{
+
+.btnTab2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height:20vmin;
+    height: 20vmin;
 }
-.tab2p{
+
+.tab2p {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,99 +115,112 @@ html, body {
 
 /*tab2BtnStyle*/
 .button-55 {
-  background-color: #fff;
-  background-image: none;
-  background-position: 0 90%;
-  background-repeat: repeat no-repeat;
-  background-size: 4px 3px;
-  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
-  border-style: solid;
-  border-width: 2px;
-  box-shadow: rgba(0, 0, 0, 0.445) 15px 28px 25px -18px;
-  color: #41403e;
-  cursor: pointer;
-  font-size: 1rem;
-  line-height: 23px;
-  outline: none;
-  padding: .75rem;
-  text-decoration: none;
-  transition: all 235ms ease-in-out;
-  border-bottom-left-radius: 15px 255px;
-  border-bottom-right-radius: 225px 15px;
-  border-top-left-radius: 255px 15px;
-  border-top-right-radius: 15px 225px;
-  user-select: none;
- 
+    background-color: #fff;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, 0.445) 15px 28px 25px -18px;
+    color: #41403e;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 23px;
+    outline: none;
+    padding: .75rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+
 }
 
 .button-55:hover {
-  box-shadow: rgba(255, 255, 255, 0.637) 2px 8px 8px -5px;
-  transform: translate3d(0, 2px, 0);
-  font-size: 30px;
+    box-shadow: rgba(255, 255, 255, 0) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+    background-color: black;
+    font-size: 30px;
 }
+
+.button-55:hover a {
+    color: white;
+}
+
 .button-55:focus {
-  box-shadow: rgba(255, 255, 255, 0.3) 2px 8px 4px -6px;
+    box-shadow: rgba(255, 255, 255, 0.3) 2px 8px 4px -6px;
 }
-.centerMe{
+
+.centerMe {
     text-align: center;
     margin: 30px;
 }
-.centerMe, a{
+
+.centerMe,
+a {
     text-decoration: none;
     color: black;
 }
-#aboutBtn{
+
+#aboutBtn {
     font-size: 30px;
     transition: all 600ms ease-in-out;
     font-size: 30px;
     transition: all 600ms ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.993) 15px 28px 25px -18px;
     background-color: #fff;
-  background-image: none;
-  background-position: 0 90%;
-  background-repeat: repeat no-repeat;
-  background-size: 4px 3px;
-  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
-  border-style: solid;
-  border-width: 2px;
-  box-shadow: rgba(0, 0, 0, 0.795) 15px 28px 25px -18px;
-  color: #41403e;
-  cursor: pointer;
-  font-size: 1rem;
-  line-height: 23px;
-  outline: none;
-  padding: .75rem;
-  text-decoration: none;
-  transition: all 235ms ease-in-out;
-  border-bottom-left-radius: 15px 255px;
-  border-bottom-right-radius: 225px 15px;
-  border-top-left-radius: 255px 15px;
-  border-top-right-radius: 15px 225px;
-  user-select: none;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, 0.795) 15px 28px 25px -18px;
+    color: #41403e;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 23px;
+    outline: none;
+    padding: .75rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
 }
-#aboutBtn:hover{
+
+#aboutBtn:hover {
     font-size: 40px;
     background-color: rgb(0, 0, 0);
-    color: white;
+    color: rgb(255, 255, 255);
     transform: translate3d(0, 2px, 0);
 }
 
-.jimmyImg1{
+.jimmyImg1 {
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
 }
-.jimmyImg1 img{
+
+.jimmyImg1 img {
     display: flex;
     position: relative;
     width: 70vmin;
     height: 100%;
-    padding:0;
+    padding: 0;
     margin: 0px;
-    box-shadow: 0 0px 150px 0px #add8e6;
+    box-shadow: 0 0px 30px 0px #474747;
     border-radius: 50%;
 }
-.contactContainer{
+
+.contactContainer {
     width: 100%;
     height: 100vh;
     color: wblack;
@@ -201,10 +228,11 @@ html, body {
     text-align: center;
     align-items: center;
     justify-content: center;
-   
+
 }
-form{
-    
+
+form {
+
     background: linear-gradient(180deg, rgb(173, 216, 230));
     display: flex;
     flex-direction: column;
@@ -213,15 +241,19 @@ form{
     max-width: 600px;
     border-radius: 10px;
 }
-form, h3{
+
+form,
+h3 {
     color: rgb(255, 255, 255);
     font-weight: 800;
     margin-bottom: 20px;
     display: flex;
-   
+
 }
-form input, form textarea{
-    border:0;
+
+form input,
+form textarea {
+    border: 0;
     margin: 10px 0;
     padding: 20px;
     outline: none;
@@ -229,37 +261,57 @@ form input, form textarea{
     font-size: 16px;
     color: white;
 }
-form ::placeholder{
+
+form ::placeholder {
     color: white;
 }
-form button{
+
+form button {
     padding: 15px;
-    background:rgb(255, 255, 255);
+    background: rgb(255, 177, 177);
     color: rgb(0, 0, 0);
     box-shadow: rgba(0, 0, 0, 0.76) 15px 28px 25px -18px;
     font-size:
-    18px;
+        18px;
     border: 0;
     outline: none;
     cursor: pointer;
-    width:150px;
+    width: 150px;
     margin: 20px auto 0;
     border-radius: 30px;
-    transition: all 600ms ease-in-out;
+    transition: all 60ms ease-in-out;
 }
-form button:hover{
+
+form button:hover {
     font-size: 30px;
     transform: translate3d(0, 2px, 0);
 }
 
-@media (max-width: 1000px){
-    body, html{
-    background: rgb(167, 168, 168);
-    height: 100%;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+@media (max-width: 1000px) {
+
+    body,
+    html {
+        background: rgb(0, 0, 0);
+        height: 100%;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-image:
+            linear-gradient(to top right,
+                white 50%,
+                black 50%);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
     }
+
+    .homeBio {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 30px;
+
+    }
+
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -290,68 +342,70 @@ form button:hover{
     .navbar-links.active {
         display: flex;
     }
-    .homeText{
-    justify-content: center;
-    font-size: 90px;
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-}
-.homeBio{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 30px;
-    background-color: rgba(0, 0, 0, 0.466);
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-    border-radius: 10px;
-    font-size: 40px;
-}
-#aboutBtn{
-    font-size: 30px;
-    transition: all 600ms ease-in-out;
-    box-shadow: rgba(0, 0, 0, 0.993) 15px 28px 25px -18px;
-    background-color: #fff;
-  background-image: none;
-  background-position: 0 90%;
-  background-repeat: repeat no-repeat;
-  background-size: 4px 3px;
-  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
-  border-style: solid;
-  border-width: 2px;
-  box-shadow: rgba(0, 0, 0, 0.795) 15px 28px 25px -18px;
-  color: #41403e;
-  cursor: pointer;
-  font-size: 1rem;
-  line-height: 23px;
-  outline: none;
-  padding: .75rem;
-  text-decoration: none;
-  transition: all 235ms ease-in-out;
-  border-bottom-left-radius: 15px 255px;
-  border-bottom-right-radius: 225px 15px;
-  border-top-left-radius: 255px 15px;
-  border-top-right-radius: 15px 225px;
-  user-select: none;
-}
-.btnTab2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height:20vmin;
-    box-shadow: rgba(0, 0, 0, 0.795) 15px 28px 25px -18px;
-}
-.jimmyImg1 img{
-    display: flex;
-    position: relative;
-    width: 70vmin;
-    height: 100%;
-    padding:0;
-    margin: 0px;
-    box-shadow: 0 0px 150px 0px #add8e6;
-    border-radius: 50%;
-}
-.homeText{
-    text-align: center;
-    font-size: 3rem;
-}
+
+    .homeText {
+        justify-content: center;
+        font-size: 90px;
+        text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    }
+
+    .button-55:hover {
+        background-color: #000;
+        box-shadow: rgba(255, 255, 255, 0) 2px 8px 8px -5px;
+    }
+
+    .button-55:hover a {
+        color: rgb(255, 255, 255);
+    }
+
+    #aboutBtn {
+        font-size: 30px;
+        transition: all 600ms ease-in-out;
+
+        background-image: none;
+        background-position: 0 90%;
+        background-repeat: repeat no-repeat;
+        background-size: 4px 3px;
+        border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+        border-style: solid;
+        border-width: 2px;
+
+        color: #41403e;
+        cursor: pointer;
+        font-size: 1rem;
+        line-height: 23px;
+        outline: none;
+        padding: .75rem;
+        text-decoration: none;
+        transition: all 235ms ease-in-out;
+        border-bottom-left-radius: 15px 255px;
+        border-bottom-right-radius: 225px 15px;
+        border-top-left-radius: 255px 15px;
+        border-top-right-radius: 15px 225px;
+        user-select: none;
+    }
+
+    .btnTab2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20vmin;
+        box-shadow: rgba(0, 0, 0, 0.795) 15px 28px 25px -18px;
+    }
+
+    .jimmyImg1 img {
+        display: flex;
+        position: relative;
+        width: 70vmin;
+        height: 100%;
+        padding: 0;
+        margin: 0px;
+        box-shadow: 0 0px 30px 0px #474747;
+        border-radius: 50%;
+    }
+
+    .homeText {
+        text-align: center;
+        font-size: 3rem;
+    }
 }
