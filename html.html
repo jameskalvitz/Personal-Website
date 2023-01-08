@@ -13,10 +13,11 @@
 
 <!--SmtpJS.com (for form emails)-->
 <script src="https://smtpjs.com/v3/smtp.js"></script>
-    
-    <!--JS Html Sanitizer-->
+
+<!--JS Html Sanitizer-->
 <script src="https://cdn.jsdelivr.net/gh/jitbit/HtmlSanitizer@master/HtmlSanitizer.js"></script>
 <script src="https://unpkg.com/@jitbit/htmlsanitizer@latest/HtmlSanitizer.js"></script>
+
 
 <!--open source CDN (content delivery network) lirbrary-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -57,24 +58,58 @@
 
     <!--tab1-->
     <div class="container" id="tab1C"> 
-                    <div>
-                        <h1 class="homeText">My name is James R. Kalvitz Jr.</h1>
-                    </div>
+                    
+       
 
-                    <br>
-                    <br>
+            <h1 class="homeText">
+            James R Kalvitz Jr
+            </h1>
 
-                    <div class="jimmyImg1">
-                        <img src="jimmy.jpg" alt="Image of James Kalvitz ">
-                    </div>
+       
+
+            <br>
+            <br>
+
+            <div class="jimmyImg1">
+            
+            <img src="jimmy.jpg" alt="Image of James Kalvitz ">
+            
+            </div>
+
+        
+            <h2 class="homeText">
+            Web Designer 
+            </h2>
+
+          
+        
+        </div>
+
     </div>
 
     <!--tab2-->
     <div class="container" id="tab2C">   
 
-        <div>
+        <div class="homeBio">
 
-            <p class="homeBio"><strong>I have been a web designer for 2 years. Most of my skill focuses on front end/client side web design. I am actively searching for opportunities to gain experience and start a career in the web design/development field. currently, I attend classes at Lorain County Community College that contribute towards an Associate of Applied Business in Web Development. With a 1-year certification in Web Design Fundamentals and an Associate of Arts in Universal arts through LCCC, my strong art background helps me aid the web design/development field while learning through open source criteria. Please feel free to download my resume below and contact me if you feel I could deem fit for an oppurtunity to work for you, with your team, or with your vision. Thank you, <br><br> ~James R. Kalvitz Jr.</strong></p>
+            <strong>
+
+            <p>Hello and welcome to my website! My name is James and I am an aspiring web designer with a strong passion for design and technology. I am currently a student at Lorain County Community College, where I am pursuing an Associate of Applied Business in Web Development. I have completed an Associate of Arts in Universal Arts and a certificate in Web Design Fundamentals, and have completed a 300-hour course through freecodecamp.org. I have also achieved certification in White Belt L1 and L2 Microsoft Word and Microsoft Excel. In college, I have also had some experience with C#, PHP, and both Windows Command Line and Linux. I am expected to graduate with my associate degree in the fall semester of 2023.
+
+                <p>I have a solid understanding of HTML and CSS, and am familiar with JavaScript, jQuery, and other web development technologies. I am eager to start my career in web design and development, and I am looking for my first on-the-job opportunity to get my foot in the door and learn as much as I can. I believe that with the right guidance and mentorship, I have the potential to become a successful web designer and make a meaningful contribution to the field. I am constantly learning and improving my skills, and in my free time, you can find me experimenting with new design software, learning about the latest web development trends, and finding inspiration from the work of other designers.
+                </p>
+                
+                
+                <p>Thank you for visiting my website, and I hope you enjoy exploring my portfolio. I have also included my CV and resume for your review. Just click on the "click me" button below to view, select, and download either one of them or both of them. I am excited to see where my career in web design will take me, and I am always open to new opportunities and challenges. Feel free to reach out to me with any questions or helpful information using my "contact" page at the top of my website. I look forward to my future and am excited to see where my hard work and dedication takes me in this field of web design and development.
+                </p>
+
+                <p>
+                
+                <br><br> ~James R. Kalvitz Jr.
+                
+                </p>
+
+            </strong>
 
         </div>
 
@@ -82,18 +117,24 @@
             <div id="effect">
             <div class="centerMe">
                     
-                    <button class="button-55"><a href="CV.pdf" download>Download CV</a></button>
+                    <button class="button-55"><a href="CV.pdf" download>CV</a></button>
 
                     <br><br>
 
-                    <button class="button-55"><a href="2023ResumeJamesK.pdf" download>Download Resume</a></button>
+                    <button class="button-55"><a href="2023ResumeJamesK.pdf" download>Resume</a></button>
             </div>
             </div>
         </div>
            
         <div class="btnTab2">
 
-          <button id="aboutBtn">Click Me</button>
+          <button id="aboutBtn">
+            
+            <!--Toggle applied to this p tag using jquery-->
+            <p id="status">Open me</p>
+        
+        </button>
+
 
         </div>
     </div>
@@ -103,7 +144,7 @@
         <div class="contactContainer">
 
             <!--calling email function-->
-           <form onsubmit="sendEmail(); reset(); return false;">
+           <form onsubmit="sendEmail(); reset(); return false;" v-html="html">
 
             
             <h3>Get in touch</h3>
@@ -123,6 +164,5 @@
 
         </div>
     </div>
-
 </body>
 </html>
